@@ -7,7 +7,7 @@ const SimpleInput = (props) => {
     hasError: nameInputHasError,
     valueChangeHandler: nameChangedHandler,
     InputBlurHandler: nameBlurHandler,
-    reset: resetEmailInput,
+    reset: resetNameInput,
   } = useInput((value) => {
     return value.trim() !== "";
   });
@@ -18,7 +18,7 @@ const SimpleInput = (props) => {
     hasError: emailInputHasError,
     valueChangeHandler: emailChangedHandler,
     InputBlurHandler: emailBlurHandler,
-    reset: resetNameInput,
+    reset: resetEmailInput,
   } = useInput((value) => {
     return value.includes("@");
   });
